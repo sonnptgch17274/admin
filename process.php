@@ -16,28 +16,27 @@ if(isset($_POST['user']) && isset($_POST['pass']))
 	// tạo kết nối tới cơ sở dữ liệu bằng mysql
 	// có 2 cách kết nối đến phpmyadmin ( 1. mysqli -> mysql  2. PDO <-> other Ms SQL Server) - phpmyadmin thường dùng 1
 	
-	// tạo câu truy vấn 
-	$sql = "select * from users where username ='" .$user 
-		. "' and password='" . $pass . "'";
+    // tạo câu truy vấn 
+    $sql = "SELECT * FROM users where username = '" .$user
+    . "' and password='" . $pass . "'";
 	// chạy câu truy vấn lấy kết quả 
 	
 
-	$rows = query($sql);
-	if(count($rows)>0)
-		echo "<h1>Login succesfull. Welcome </h1>" . $_POST['user'];
-
-	else
-		echo "<h1>Login fail</h1>";
-
-
-	// if($username=="abc" && $password=="123")
-	// {
-	// 	echo "<h1>Login successfully!</h1>";
-	// 	echo "User: " . $username . "<br>";
-	// 	echo "Pass: " . $password . "<br>";
-	// }
+	// $rows = query($sql);
+	// if(count($rows)>0)
+	// 	echo "<h1>Login succesfull. Welcome </h1>" . $_POST['user'];
 	// else
-	// 	echo "<h1> Mày nhập sai mật khẩu hoặc tài khoản rồi thèn ngu</h1>";
+	// 	echo "<h1>Login fail</h1>";
+
+
+	if($username=="admin" && $password=="admin")
+	{
+		echo "<h1>Login successfully!</h1>";
+		echo "User: " . $username . "<br>";
+		echo "Pass: " . $password . "<br>";
+	}
+	else
+		echo "<h1> Mày nhập sai mật khẩu hoặc tài khoản rồi thèn ngu</h1>";
 }
 else
 	echo "<h1>Tài khoản của mày đéo có trên hệ thống,OK!!!</h1>";
