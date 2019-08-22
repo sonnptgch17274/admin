@@ -28,40 +28,21 @@
                 }
                 ?>   
                     </th>
-					<th>Price</th>
-					<th>Content</th>
-                </tr>
-                
-				<tr>
-                <td>
-                <?php
-                foreach ($resultSet as $row) {
-                    echo '<td>' .$row['name']. '</td>';
-                }
-                ?>    
-                </td>            
-                </tr>
-                
-				<tr>
-                <td>
-                <?php
+					<th>Price
+                    <?php
                 foreach ($resultSet as $row) {
                     echo '<td>' .$row['price']. '</td>';
                 }
-                ?>    
-                </td>            
-                </tr>
-                
-				<tr>
-                <td>
-                <?php
+                ?> 
+                    </th>
+					<th>Content
+                    <?php
                 foreach ($resultSet as $row) {
                     echo '<td>' .$row['content']. '</td>';
                 }
-                ?>    
-                </td>            
-                </tr>
-            
+                ?> 
+                    </th>
+                </tr>                            
 			</table>
    
 
