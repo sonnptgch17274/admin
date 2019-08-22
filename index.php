@@ -35,7 +35,7 @@
 		<?php  
 			foreach ($resultSet as $row) {
 			echo '<li>' .
-				$row['name'] . ' --' . $row['price'] . ' --' .$row[content] 
+				$row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
 				. '</li>';
 			}
 		?>
