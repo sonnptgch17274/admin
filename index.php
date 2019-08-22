@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ManageProduct</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+    
+    <div class="trang">
         <?php
         require_once './database.php';
 		$sql = "SELECT * FROM product";
@@ -19,7 +21,7 @@
 				
 	?>
  
-            <table border="1" cellspacing="0" width="200">
+            <table border="1" cellspacing="0" width="400">
 				<tr>
 					<th>Name</th>
                     <?php
@@ -55,6 +57,6 @@
    
 
 
-
+            </div>
 </body>
 </html>
