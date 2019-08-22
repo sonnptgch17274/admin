@@ -18,18 +18,22 @@
 		$resultSet = $stmt->fetchAll();
 				
 	?>
-	<ul>
-		<?php  
-			foreach ($resultSet as $row) {
-			echo '<li>' .
-				$row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
-                . '</li>';
-			}
-		?>
-	</ul>
+ 
+            <table border="1" cellspacing="0">
+				<tr>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Content</th>
+				</tr>
+				<tr class="id2">
+                <?php
+                    echo '<td>'
+                    $row['name'] . ' --' . $row['price'] . ' --' .$row['content']
+                    '</td>'
+                ?>
+				</tr>
+			</table>
    
-    
-
 
 
 
