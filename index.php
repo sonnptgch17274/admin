@@ -21,28 +21,34 @@
  
             <table border="1" cellspacing="0">
 				<tr>
-					<th>Name
+					<th>Name</th>
                     <?php
                 foreach ($resultSet as $row) {
                     echo '<td>' .$row['name']. '</td>';
                 }
-                ?>   
-                    </th>
-					<th>Price
-                    <?php
-                foreach ($resultSet as $row) {
-                    echo '<td>' .$row['price']. '</td>';
-                }
-                ?> 
-                    </th>
-					<th>Content
+                ?>      
+                </tr>
+                
+				<tr>
+					<th>Content</th>
                     <?php
                 foreach ($resultSet as $row) {
                     echo '<td>' .$row['content']. '</td>';
                 }
-                ?> 
-                    </th>
-                </tr>                            
+                ?>      
+                </tr>
+
+
+				<tr>
+					<th>Price</th>
+                    <?php
+                foreach ($resultSet as $row) {
+                    echo '<td>' .$row['price']. '</td>';
+                }
+                ?>      
+                </tr>    
+                
+                
 			</table>
    
 
