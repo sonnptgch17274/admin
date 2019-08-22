@@ -23,7 +23,7 @@
 		
 
 
-		$sql = "SELECT * FROM registercourse";
+		$sql = "SELECT * FROM product";
 		$stmt = $pdo->prepare($sql);
 		//Thiết lập kiểu dữ liệu trả về
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
