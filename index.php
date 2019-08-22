@@ -46,10 +46,12 @@
                     echo '<td>' .$row['price']. '</td>';
                 }
                 ?>      
-                </tr>    
-                
-                
-			</table>
+                </tr>                    
+            </table>
+            
+            <button>Add</button>
+            <button>Edit</button>
+            <button>Delete</button>
    
 
 
