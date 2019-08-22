@@ -21,7 +21,7 @@
 				
 	?>
  
-            <table border="1" cellspacing="0" width="400">
+            <table class="table" border="1" cellspacing="0" width="400">
 				<tr>
 					<th>Name</th>
                     <?php
