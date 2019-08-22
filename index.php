@@ -31,8 +31,9 @@
                     echo '<td>' .
                     $row['name'] . ' --' . $row['price'] . ' --' .$row['content']
                     . '</td>';
-                ?>
                 }
+                ?>
+                
 				</tr>
 			</table>
    
