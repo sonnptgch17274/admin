@@ -7,11 +7,13 @@
 <body>
 <?php 
 require_once './database.php'; 
-function usernameCheck($username) {
-    $stmt = $pdo->prepare("SELECT username FROM users WHERE username = ':name'");
-    $stmt->bindParam(':name', $username);
-    $stmt->execute();
 
+    $sql = "SELECT * FROM users";
+    $stmt = $pdo->prepare($sql);
+    //Thiết lập kiểu dữ liệu trả về
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->execute();
+    $resultSet = $stmt->fetchAll();
 
     if($stmt->rowCount() > 0){
         echo "exists!";
