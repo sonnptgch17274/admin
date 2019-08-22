@@ -27,33 +27,34 @@
                 </tr>
                 
 				<tr>
+                <td>
                 <?php
-                foreach ($resultSet as $column) {
-                    echo 
-                    '<td>' .
-                    $column['name']. 
-                    '</td>';
+                foreach ($resultSet as $row) {
+                    echo $row['name']. ;
                 }
-                ?>                
+                ?>    
+                </td>            
                 </tr>
                 
-                <tr>
+				<tr>
+                <td>
                 <?php
-                foreach ($resultSet as $column) {
-                    echo '<td>' .
-                    $column['price']. '</td>';
+                foreach ($resultSet as $row) {
+                    echo $row['price'];
                 }
-                ?>                
+                ?>    
+                </td>            
                 </tr>
                 
-                <tr class="id2">
+				<tr>
+                <td>
                 <?php
-                foreach ($resultSet as $column) {
-                    echo '<td>' .
-                    $column['content']. '</td>';
+                foreach ($resultSet as $row) {
+                    echo $row['content'];
                 }
-                ?>                
-				</tr>
+                ?>    
+                </td>            
+                </tr>
             
 			</table>
    
