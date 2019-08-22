@@ -24,6 +24,7 @@
 			echo '<li>' .
 				$row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
                 . '</li>';
+                <input type="button">;
                 
 			}
 		?>
