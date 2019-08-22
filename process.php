@@ -37,19 +37,15 @@ if(isset($_POST['user']) && isset($_POST['pass']))
 	}
 	else
 		echo "<h1> Mày nhập sai mật khẩu hoặc tài khoản rồi thèn ngu</h1>";
-}
-else
-	echo "<h1>Tài khoản của mày đéo có trên hệ thống,OK!!!</h1>";
+// }
+// else
+// 	echo "<h1>Tài khoản của mày đéo có trên hệ thống,OK!!!</h1>";
 
 
 ?>
-<!-- <table style="border: 1px solid gray; border-spacing: 20px;">
-	<tr>
-		<th>ID</th>
-		<th>Username</th>
-		<th>Password</th>
-	</tr> -->
-	<!-- <?php
+
+
+	<?php
 	$sql="select*from users";
 	$rows=query($sql);
 	for($i=0; $i<count($rows); $i++)
@@ -62,7 +58,7 @@ else
 		</tr>
 	<?php
 	} 
-	 ?> -->
+	 ?>
 	
 </table>
 </body>
