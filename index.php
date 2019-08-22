@@ -19,7 +19,7 @@
 				
 	?>
  
-            <table border="1" cellspacing="0">
+            <table border="1" cellspacing="0" width="200">
 				<tr>
 					<th>Name</th>
                     <?php
