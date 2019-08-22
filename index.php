@@ -21,7 +21,13 @@
  
             <table border="1" cellspacing="0">
 				<tr>
-					<th>Name</th>
+					<th>Name
+                    <?php
+                foreach ($resultSet as $row) {
+                    echo '<td>' .$row['name']. '</td>';
+                }
+                ?>   
+                    </th>
 					<th>Price</th>
 					<th>Content</th>
                 </tr>
@@ -30,7 +36,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['name'];
+                    echo '<td>' .$row['name']. '</td>';
                 }
                 ?>    
                 </td>            
@@ -40,7 +46,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['price'];
+                    echo '<td>' .$row['price']. '</td>';
                 }
                 ?>    
                 </td>            
@@ -50,7 +56,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['content'];
+                    echo '<td>' .$row['content']. '</td>';
                 }
                 ?>    
                 </td>            
