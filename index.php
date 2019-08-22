@@ -30,7 +30,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['name']. ;
+                    echo "" . $row['name']. ;
                 }
                 ?>    
                 </td>            
@@ -40,7 +40,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['price'];
+                    echo "" . $row['price'];
                 }
                 ?>    
                 </td>            
@@ -50,7 +50,7 @@
                 <td>
                 <?php
                 foreach ($resultSet as $row) {
-                    echo $row['content'];
+                    echo "" . $row['content'];
                 }
                 ?>    
                 </td>            
