@@ -29,8 +29,10 @@
 				<tr>
                 <?php
                 foreach ($resultSet as $column) {
-                    echo '<td>' .
-                    $row['name']. '</td>';
+                    echo 
+                    '<td>' .
+                    $column['name']. 
+                    '</td>';
                 }
                 ?>                
                 </tr>
@@ -39,7 +41,7 @@
                 <?php
                 foreach ($resultSet as $column) {
                     echo '<td>' .
-                    $row['price']. '</td>';
+                    $column['price']. '</td>';
                 }
                 ?>                
                 </tr>
@@ -48,7 +50,7 @@
                 <?php
                 foreach ($resultSet as $column) {
                     echo '<td>' .
-                    $row['content']. '</td>';
+                    $column['content']. '</td>';
                 }
                 ?>                
 				</tr>
