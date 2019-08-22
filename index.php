@@ -27,10 +27,12 @@
 				</tr>
 				<tr class="id2">
                 <?php
-                    echo '<td>'
+                foreach ($resultSet as $row) {
+                    echo '<td>' .
                     $row['name'] . ' --' . $row['price'] . ' --' .$row['content']
-                    '</td>'
+                    . '</td>';
                 ?>
+                }
 				</tr>
 			</table>
    
