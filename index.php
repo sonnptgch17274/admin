@@ -24,17 +24,35 @@
 					<th>Name</th>
 					<th>Price</th>
 					<th>Content</th>
-				</tr>
-				<tr class="id2">
+                </tr>
+                
+				<tr>
                 <?php
                 foreach ($resultSet as $row) {
                     echo '<td>' .
-                    $row['name'] . ' --' . $row['price'] . ' --' .$row['content']
-                    . '</td>';
+                    $row['name']. '</td>';
                 }
-                ?>
+                ?>                
+                </tr>
                 
+                <tr>
+                <?php
+                foreach ($resultSet as $row) {
+                    echo '<td>' .
+                    $row['price']. '</td>';
+                }
+                ?>                
+                </tr>
+                
+                <tr class="id2">
+                <?php
+                foreach ($resultSet as $row) {
+                    echo '<td>' .
+                    $row['content']. '</td>';
+                }
+                ?>                
 				</tr>
+            
 			</table>
    
 
