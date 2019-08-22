@@ -13,7 +13,7 @@
 		$sql = "SELECT * FROM product";
 		$stmt = $pdo->prepare($sql);
 		//Thiết lập kiểu dữ liệu trả về
-		$stmt->setFetchMode(PDO::FETCH_ASSOC);
+		$stmt->setFetchMode(PDO::FETCH_BOTH);
 		$stmt->execute();
 		$resultSet = $stmt->fetchAll();
 				
@@ -24,8 +24,6 @@
 			echo '<li>' .
 				$row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
                 . '</li>';
-                <input type="button">;
-                
 			}
 		?>
 	</ul>
