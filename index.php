@@ -28,7 +28,7 @@
                 
 				<tr>
                 <?php
-                foreach ($resultSet as $row) {
+                foreach ($resultSet as $column) {
                     echo '<td>' .
                     $row['name']. '</td>';
                 }
@@ -37,7 +37,7 @@
                 
                 <tr>
                 <?php
-                foreach ($resultSet as $row) {
+                foreach ($resultSet as $column) {
                     echo '<td>' .
                     $row['price']. '</td>';
                 }
@@ -46,7 +46,7 @@
                 
                 <tr class="id2">
                 <?php
-                foreach ($resultSet as $row) {
+                foreach ($resultSet as $column) {
                     echo '<td>' .
                     $row['content']. '</td>';
                 }
