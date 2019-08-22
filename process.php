@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php 
-require_once './index.php';
+require_once './database.php';
 // Lấy dự liệu gửi lên từ client dùng biến toàn cục $_GET hoặc $_POST
 // Isset: kiểm tra xem tài khoản có tồn tại không 
 if(isset($_POST['user']) && isset($_POST['pass']))
