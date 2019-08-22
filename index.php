@@ -45,8 +45,8 @@
     <div><h1>Log in</h1>
 			<form action="process.php" method="Post">
 				<div class="user">
-					<input id="user1" type="text" name="username" placeholder="Username" size="50"> <br>
-					<input id="user1" type="password" name="password" placeholder="Password" size="50"> <br>
+					<input id=1 type="text" name="username" placeholder="Username" size="50"> <br>
+					<input id=1 type="password" name="password" placeholder="Password" size="50"> <br>
 					<input type="submit" value="Login">
 				</div>
 			</form>	
