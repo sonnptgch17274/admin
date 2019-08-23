@@ -36,33 +36,16 @@
                     </div>
                     <div class="clear-both"></div>
                 </li>
-
-            <?php
-                require_once './database.php';
-                $sql = "SELECT * FROM product";
-                $stmt = $pdo->prepare($sql);
-                //Thiết lập kiểu dữ liệu trả về
-                $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                $stmt->execute();
-                $resultSet = $stmt->fetchAll();               
-                ?>
-
-                
-                
-                
-
-
+       
                 <?php  
                     foreach ($resultSet as $row) {
                     echo '<li>' .
-                        $row['name'] . 
-                        . $row['price'] . 
-                        .$row['content'] 
+                        $row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
                         . '</li>';
                     }
-                ?>
+		        ?>
 
-
+                </ul>
 
                 <!-- <div class="product-prop product-button">
                     <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
