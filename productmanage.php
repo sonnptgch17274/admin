@@ -45,7 +45,7 @@
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $stmt->execute();
                 $resultSet = $stmt->fetchAll();               
-                    ?>
+                ?>
 
                 
                 
@@ -55,9 +55,9 @@
                 <?php  
                     foreach ($resultSet as $row) {
                     echo '<li>' .
-                        $row['<div class="product-prop product-name"><?= $row['name'] ?></div>'] . 
-                        . $row['<div class="product-prop product-name"><?= $row['price'] ?></div>'] . 
-                        .$row['<div class="product-prop product-name"><?= $row['content'] ?></div>'] 
+                        $row['name'] . 
+                        . $row['price'] . 
+                        .$row['content'] 
                         . '</li>';
                     }
                 ?>
