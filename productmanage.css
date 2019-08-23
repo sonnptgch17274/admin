@@ -29,13 +29,14 @@ h1{
     float: right;
     border-left: 1px solid #ccc;
     line-height: 30px;
+    padding: 0 10px;
 }
 
 .product-name{
     padding-left: 10px;
     border-right: 0;
     float: left;
-    width: 170px;
+    width: 200px;
 }
 .product-button{
     float: right;
