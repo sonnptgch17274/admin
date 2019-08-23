@@ -39,7 +39,13 @@
 
             <?php
                 require_once './database.php';
-                foreach ($resultSet as $row)
+                $sql = "SELECT * FROM product";
+                $stmt = $pdo->prepare($sql);
+                //Thiết lập kiểu dữ liệu trả về
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->execute();
+                $resultSet = $stmt->fetchAll();
+                while foreach ($resultSet as $row) {
             ?>
             <li>
                 <div class="product-prop product-name"><?= $row['name'] ?></div>
@@ -56,7 +62,7 @@
                 </div>
                 <div class="clear-both"></div>
 	        </li>
-
+            <?php } ?>             
 
             </ul>
         </div>
