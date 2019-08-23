@@ -13,7 +13,7 @@
     <div class="than">
     <div id="user_login" class="box-content">
                 <h1>Admin Login</h1>
-                <form action="./Login.php" method="Post" autocomplete="off">
+                <form action="./index.php" method="Post" autocomplete="off">
                     <label>Username</label></br>
                     <input type="text" name="username" value="" /><br/>
                     <label>Password</label></br>
