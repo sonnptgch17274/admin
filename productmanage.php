@@ -24,25 +24,21 @@
                     <div class="product-prop product-name">Name</div>
                     <div class="product-prop product-name">Price</div>
                     <div class="product-prop product-name">Content</div>
-                    <div class="product-prop product-button">
-                        Delete
-                    </div>
-                    <div class="product-prop product-button">
-                        Edit
-                    </div>
-                    <div class="product-prop product-button">
-                        Copy
-                    </div>
+                    <div class="product-prop product-button">Delete</div>
+                    <div class="product-prop product-button">Edit</div>
+                    <div class="product-prop product-button">Copy</div>
                     <div class="clear-both"></div>
                 </li>
-       
                 <?php  
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                         ?>
                         <div class="product-prop product-name"><?= $row['name'] ?></div>
+                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-name"><?= $row['price'] ?></div>
+                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-name"><?= $row['content'] ?></div>
+                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-button">
                             <a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
                         </div>
