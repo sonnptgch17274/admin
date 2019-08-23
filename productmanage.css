@@ -55,9 +55,6 @@ h1{
     border-top: 0;
     border-left: 0;
 }
-.product-items ul li:first-child{
-    border-top: 1px solid #ccc;
-}
 
 .product-item-heading{
     text-align: center;

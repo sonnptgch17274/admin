@@ -54,9 +54,7 @@
                         <div class="product-prop product-button">
                             <a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
                         </div>
-
-                        <div class="clear-both"></div>
-                        
+                        <div class="clear-both"></div>  
                     <?php } ?>
             </ul>
         </div>
