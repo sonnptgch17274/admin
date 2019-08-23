@@ -34,11 +34,8 @@
                     foreach ($resultSet as $row) {
                         ?>
                         <div class="product-prop product-name"><?= $row['name'] ?></div>
-                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-name"><?= $row['price'] ?></div>
-                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-name"><?= $row['content'] ?></div>
-                        <p>--------------------------------------------------------------</p>
                         <div class="product-prop product-button">
                             <a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
                         </div>
