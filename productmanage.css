@@ -17,7 +17,7 @@ h1{
 .product-items{
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; 
 }
 
 .product-items ul{
@@ -27,7 +27,7 @@ h1{
 .product-prop{
     float: right;
     border-left: 1px solid #ccc;
-    line-height: 50px;
+    line-height: 20px;
     padding: 0 10px;
 }
 
@@ -61,7 +61,7 @@ h1{
 }
 .product-item-heading .product-prop{
     height: 40px;
-    line-height: 10px;
+    line-height: 20px;
     /* background: #717171; */
     color:black;
 }
@@ -70,7 +70,7 @@ h1{
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 15px;
-    line-height: 38px;
+    line-height: 20px;
 }
 .buttons a{
     color: white;
