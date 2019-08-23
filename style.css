@@ -1,13 +1,23 @@
-.trang{
-    width: 80%;
-	background-color: white;
-	margin: 0 auto;
-	border: 1px solid lightgray;
-}
 .table{
     margin: 0 30px;
 }
-.text{
-    padding-right: 10px;
+.trang{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid gray;
+	overflow: auto;
+}
+.dau{
+	font-weight: bold;
+	padding-left: 400px;	
+}
+.dau a{
+	float: right;
+	text-decoration: none;
+	padding-right: 10px;
+	color: black;
+}
+.dau text{
+	padding-right: 10px;
 	float: right;
 }
