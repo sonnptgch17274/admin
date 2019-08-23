@@ -64,7 +64,7 @@
 
 
 
-                <div class="product-prop product-button">
+                <!-- <div class="product-prop product-button">
                     <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
                 </div> . 
                 <div class="product-prop product-button">
@@ -74,7 +74,7 @@
                     <a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
                 </div> .
                 <div class="clear-both"></div>
-	        </li>
+	        </li> -->
                       
 
             </ul>
