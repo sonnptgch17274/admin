@@ -14,10 +14,6 @@
     background-color: yellow;
 }
 
-.phai {
-    background: #FFF;
-}
-
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -38,10 +34,9 @@ h1{
 .product-prop{
     float: right;
     border-left: 1px solid #ccc;
-    line-height: 90px;
+    line-height: 30px;
     padding: 0 10px;
 }
-
 
 .product-name{
     padding-left: 10px;
