@@ -40,9 +40,11 @@
                 <?php  
                 require_once './database.php';
                     foreach ($resultSet as $row) {
-                       echo '<div class="product-prop product-name">'<?= $row['name'] ?>'</div>'
+                        ?>
+                        <div class="product-prop product-name"><?= $row['name'] ?></div>
+                        
                     }
-		        ?>
+                    <?php } ?>
 
                 </ul>
 
