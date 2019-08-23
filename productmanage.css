@@ -5,15 +5,9 @@
     text-align: center;
     height: 1000px;
 }
-
 .dau {
     background-color: green;
 }
-
-.than {
-    background-color: yellow;
-}
-
 .container{
     width: 1200px;
     margin: 0 auto;

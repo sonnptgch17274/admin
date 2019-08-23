@@ -13,7 +13,6 @@
         <h1>Xin chao</h1>
     </div>
     <div class="than">
-        <div class="phai">
         <div class="main-content">
         <h1>Danh sách sản phẩm</h1>
         <div class="product-items">
@@ -45,11 +44,11 @@
                         <div class="product-prop product-name"><?= $row['price'] ?></div>
                         <div class="product-prop product-name"><?= $row['content'] ?></div>
                         <div class="product-prop product-button">
-                            <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
+                            <a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
                         </div>
 
                         <div class="product-prop product-button">
-                            <a href="./product_editing.php?id=<?= $row['id'] ?>">Sửa</a>
+                            <a href="./product_editing.php?id=<?= $row['id'] ?>">Edit</a>
                         </div>
 
                         <div class="product-prop product-button">
@@ -59,16 +58,8 @@
                         <div class="clear-both"></div>
                         }
                     <?php } ?>
-
-
-
-
-
-                      
-
             </ul>
         </div>
-    </div>
     </div>
 </body>
 </html>
