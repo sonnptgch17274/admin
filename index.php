@@ -19,7 +19,8 @@
 		$stmt->execute();
 		$resultSet = $stmt->fetchAll();
 				
-	?>
+    ?>
+    <div><a href="Login.php">Log out</a></div>
  
             <table class="table" border="1" cellspacing="0" width="400">
 				<tr>
@@ -48,7 +49,10 @@
                     echo '<td>' .$row['price']. '</td>';
                 }
                 ?>      
-                </tr>                    
+                </tr>  
+            <button>Add</button>
+            <button>Edit</button>
+            <button>Delete</button>                  
             </table>
             
             <button>Add</button>
