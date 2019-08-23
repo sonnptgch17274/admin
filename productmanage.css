@@ -63,7 +63,7 @@ h1{
 .product-item-heading .product-prop{
     height: 40px;
     line-height: 40px;
-    background: #717171;
+    /* background: #717171; */
     color: #FFF;
 }
 .buttons{
