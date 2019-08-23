@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="product-prop product-button">
-                            <a href="./product_editing.php?id=<?= $row['id'] ?>">Edit</a>
+                            <a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
                         </div>
 
                         <div class="product-prop product-button">
