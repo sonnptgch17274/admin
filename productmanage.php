@@ -38,6 +38,7 @@
                 </li>
        
                 <?php  
+                require_once '/database';
                     foreach ($resultSet as $row) {
                     echo '<li>' .
                         $row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 

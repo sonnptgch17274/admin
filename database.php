@@ -17,16 +17,17 @@ $db = parse_url(getenv("DATABASE_URL"));
 		    $db["pass"],
 		    ltrim($db["path"], "/")
         ));
+
+        $sql = "SELECT * FROM product";
+        $stmt = $pdo->prepare($sql);
+        //Thiết lập kiểu dữ liệu trả về
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $stmt->execute();
+        $resultSet = $stmt->fetchAll();
+        
         ?>
 
-        <?php
-            		$sql = "SELECT * FROM product";
-                    $stmt = $pdo->prepare($sql);
-                    //Thiết lập kiểu dữ liệu trả về
-                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                    $stmt->execute();
-                    $resultSet = $stmt->fetchAll();
-        ?>
+
         
 </body>
 </html>
