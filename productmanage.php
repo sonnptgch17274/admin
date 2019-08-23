@@ -41,9 +41,9 @@
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                         ?>
-                        <div class="product-prop product-name"><?= $row['name'] ?></div>
-                        <div class="product-prop product-name"><?= $row['price'] ?></div>
-                        <div class="product-prop product-name"><?= $row['content'] ?></div>
+                        <div><?= $row['name'] ?></div>
+                        <div><?= $row['price'] ?></div>
+                        <div><?= $row['content'] ?></div>
                         <div class="product-prop product-button">
                         <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
                         </div> . 
