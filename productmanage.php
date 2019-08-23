@@ -45,7 +45,7 @@
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $stmt->execute();
                 $resultSet = $stmt->fetchAll();
-                while foreach ($resultSet as $row) {
+                while ($resultSet as $row) {
             ?>
             <li>
                 <div class="product-prop product-name"><?= $row['name'] ?></div>
