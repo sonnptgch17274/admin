@@ -46,7 +46,7 @@
                 $stmt->execute();
                 $resultSet = $stmt->fetchAll();
                 foreach ($resultSet as $row) {
-            '<li>' .
+            echo '<li>' .
                 <div class="product-prop product-name"><?= $row['name'] ?></div> .
                 <div class="product-prop product-name"><?= $row['price'] ?></div> .
                 <div class="product-prop product-name"><?= $row['content'] ?></div> .
