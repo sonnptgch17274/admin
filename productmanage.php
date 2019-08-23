@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="clear-both"></div>
-                        }
+                        
                     <?php } ?>
             </ul>
         </div>
