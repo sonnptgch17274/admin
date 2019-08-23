@@ -44,7 +44,7 @@ h1{
     border-right: 0;
     padding: 0 10px;
     width: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 .clear-both{
     clear: both;
@@ -57,6 +57,7 @@ h1{
 }
 
 .product-item-heading{
+    text-align: left;
     font-weight: bold;
 }
 .product-item-heading .product-prop{
