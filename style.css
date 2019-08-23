@@ -1,23 +1,20 @@
-.table{
-    margin: 0 30px;
+.box-content {
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
 }
-.trang{
-	width: 80%;
-	margin: 0 auto;
-	border: 1px solid gray;
-	overflow: auto;
+
+#user_login form {
+    width: 200px;
+    margin: 40px auto;
 }
-.dau{
-	font-weight: bold;
-	padding-left: 400px;	
+
+#user_login form input {
+    margin: 5px 0;
 }
-.dau a{
-	float: right;
-	text-decoration: none;
-	padding-right: 10px;
-	color: black;
-}
-.dau text{
-	padding-right: 10px;
-	float: right;
+
+#user_login form button a {
+    text-decoration: none;
 }
