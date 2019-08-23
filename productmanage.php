@@ -38,6 +38,7 @@
                 </li>
 
             <?php
+                require_once './database.php';
                 foreach ($resultSet as $row)
             ?>
             <li>
