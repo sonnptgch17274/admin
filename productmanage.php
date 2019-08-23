@@ -44,12 +44,26 @@
                 //Thiết lập kiểu dữ liệu trả về
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $stmt->execute();
-                $resultSet = $stmt->fetchAll();
-                foreach ($resultSet as $row) {
-            echo '<li>' .
-                <div class="product-prop product-name"><?= $row['name'] ?></div> .
-                <div class="product-prop product-name"><?= $row['price'] ?></div> .
-                <div class="product-prop product-name"><?= $row['content'] ?></div> .
+                $resultSet = $stmt->fetchAll();               
+                    ?>
+
+                
+                
+                
+
+
+                <?php  
+                    foreach ($resultSet as $row) {
+                    echo '<li>' .
+                        $row['<div class="product-prop product-name"><?= $row['name'] ?></div>'] . 
+                        . $row['<div class="product-prop product-name"><?= $row['price'] ?></div>'] . 
+                        .$row['<div class="product-prop product-name"><?= $row['content'] ?></div>'] 
+                        . '</li>';
+                    }
+                ?>
+
+
+
                 <div class="product-prop product-button">
                     <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
                 </div> . 
@@ -59,9 +73,9 @@
                 <div class="product-prop product-button">
                     <a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
                 </div> .
-                <div class="clear-both"></div> .
-	        '</li>'
-            ?>          
+                <div class="clear-both"></div>
+	        </li>
+                      
 
             </ul>
         </div>
