@@ -26,10 +26,10 @@
                     <div class="product-prop product-name">Price</div>
                     <div class="product-prop product-name">Content</div>
                     <div class="product-prop product-button">
-                        Xóa
+                        Delete
                     </div>
                     <div class="product-prop product-button">
-                        Sửa
+                        Edit
                     </div>
                     <div class="product-prop product-button">
                         Copy
@@ -41,18 +41,21 @@
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                         ?>
-                        <div><?= $row['name'] ?></div>
-                        <div><?= $row['price'] ?></div>
-                        <div><?= $row['content'] ?></div>
+                        <div class="product-prop product-name"><?= $row['name'] ?></div>
+                        <div class="product-prop product-name"><?= $row['price'] ?></div>
+                        <div class="product-prop product-name"><?= $row['content'] ?></div>
                         <div class="product-prop product-button">
-                        <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
-                        </div> . 
+                            <a href="./product_delete.php?id=<?= $row['id'] ?>">Xóa</a>
+                        </div>
+
                         <div class="product-prop product-button">
                             <a href="./product_editing.php?id=<?= $row['id'] ?>">Sửa</a>
-                        </div> .
+                        </div>
+
                         <div class="product-prop product-button">
                             <a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-                        </div> .
+                        </div>
+
                         <div class="clear-both"></div>
                         }
                     <?php } ?>
