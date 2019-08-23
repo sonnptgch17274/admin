@@ -41,7 +41,7 @@
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                     echo '<li>' .
-                        $row['name'] . ' --' . $row['price'] . ' --' .$row['content'] 
+                        $row['<div class="product-prop product-name"><?= $row['name'] ?></div>']
                         . '</li>';
                     }
 		        ?>
