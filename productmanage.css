@@ -45,7 +45,7 @@ h1 {
 .product-prop {
     float: right;
     border-left: 1px solid #ccc;
-    line-height: 150px;
+    line-height: 90px;
     padding: 0 10px;
 }
 
