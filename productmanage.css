@@ -61,7 +61,7 @@ h1{
 }
 .product-item-heading .product-prop{
     height: 40px;
-    line-height: 40px;
+    line-height: 10px;
     /* background: #717171; */
     color:black;
 }
