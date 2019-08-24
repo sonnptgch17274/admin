@@ -61,7 +61,7 @@
         
                      <tr>
                         <td><input type="hidden" name="txt_id" value="<?= $object_id; ?>"></td>
-                        <td><input type="submit" name="btn_submit" value="Submit"></td>
+                        <td><input type="submit" name="btn_submit" value="Submit"></td> 
                     </tr>
         
         </table>
