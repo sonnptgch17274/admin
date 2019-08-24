@@ -5,7 +5,7 @@
   </head>
 <body>
     <h1>Add product information</h1>
-    <form action="Add.php" method="post">
+    <form action="productmanage.php" method="post">
         <table width="50%" border="0">
             <tr>
                 <td>ID</td>
@@ -30,14 +30,15 @@
             <tr>
                 <td></td>
                 <td><input type="submit" name="Register"></td>
-                <td><button type="submit" name="Add"><a href="productmanage.php"></a></button></td>
             </tr>
 
         </table>
     </form>
-
-
-
+<?php
+    $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
+        $stmt= $pdo->prepare($sql);
+        $stmt->execute([$id, $productname, $price, $content]);
+?>
 
 </body>
 </html>
