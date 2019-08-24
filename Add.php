@@ -2,7 +2,7 @@
     include "database.php";
         // $id = $_POST["txtId"];
         $id = $_POST["txtId"];
-        $name = $_POST["txtName"];
+        $productname = $_POST["txtName"];
         $price = $_POST["txtPrice"];
         $content = $_POST["txtContent"];
 
@@ -12,9 +12,9 @@
         // $stsm->execute();
         // $stsm->close();  
 
-        $sql = "INSERT INTO users (id, name, price, content) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
         $stmt= $pdo->prepare($sql);
-        $stmt->execute([$id, $name, $price, $content]);
+        $stmt->execute([$id, $productname, $price, $content]);
 
 
 
