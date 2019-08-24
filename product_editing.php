@@ -29,7 +29,8 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" name="Register"><a href="index.php" onclick="alert('Your product has been added')"></a></td>
+                <td><input type="submit" name="Register"></td>
+                <td><button type="submit" name="Register"><a href="productmanage.php"></a></button></td>
             </tr>
 
         </table>
