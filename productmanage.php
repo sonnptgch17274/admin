@@ -33,6 +33,7 @@
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                         ?>
+                        <div id="test">
                         <div class="product-prop product-name"><?= $row['name'] ?></div>
                         <div class="product-prop product-name"><?= $row['price'] ?></div>
                         <div class="product-prop product-name"><?= $row['content'] ?></div>
@@ -49,6 +50,7 @@
                         </div>
                         <div class="clear-both"></div>  
                     <?php } ?>
+                    </div>
             </ul>
         </div>
     </div>
