@@ -5,7 +5,7 @@
   </head>
 <body>
     <h1>Add product information</h1>
-    <form action="Add.php" method="post">
+    <form action="productmanage.php" method="post">
         <table width="50%" border="0">
             <tr>
                 <td>ID</td>
@@ -34,7 +34,27 @@
 
         </table>
     </form>
+    <?php
+    include "database.php";
+        // $id = $_POST["txtId"];
+        $id = $_POST["txtId"];
+        $productname = $_POST["txtName"];
+        $price = $_POST["txtPrice"];
+        $content = $_POST["txtContent"];
 
+        // $stsm = $pdo->prepare("INSERT INTO product(name, 
+        // price, content) VALUES (?,?,?)");
+        // $stsm->bind_param("sss", $name, $price, $content);
+        // $stsm->execute();
+        // $stsm->close();  
+
+        $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
+        $stmt= $pdo->prepare($sql);
+        $stmt->execute([$id, $productname, $price, $content]);
+
+
+
+    ?>
 
 </body>
 </html>
