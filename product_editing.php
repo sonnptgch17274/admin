@@ -29,7 +29,7 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" name="Register"><a href="javascript:void(0)" onclick="alert('Your product has been added')"></a></td>
+                <td><input type="submit" name="Register"><a href="index.php" onclick="alert('Your product has been added')"></a></td>
             </tr>
 
         </table>
