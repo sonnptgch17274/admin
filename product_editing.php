@@ -8,6 +8,11 @@
     <form action="Add.php" method="post">
         <table width="50%" border="0">
             <tr>
+                <td>ID</td>
+                <td><input type="text" name ="txtID"></td>
+            </tr>
+
+            <tr>
                 <td>Name</td>
                 <td><input type="text" name ="txtName"></td>
             </tr>
