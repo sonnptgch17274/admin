@@ -4,7 +4,7 @@
         $id = $_POST["txtId"];
         $name = $_POST["txtName"];
         $price = $_POST["txtPrice"];
-        $content = $_POST["txtContent"]
+        $content = $_POST["txtContent"];
 
         $stsm = $pdo->prepare("INSERT INTO product(id, name, 
         price, content) VALUES (?,?,?,?)");
