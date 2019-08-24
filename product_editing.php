@@ -30,7 +30,7 @@
             <tr>
                 <td></td>
                 <td><input type="submit" name="Register"></td>
-                <td><button type="submit" name="Register"><a href="productmanage.php"></a></button></td>
+                <td><button type="submit" name="Add"><a href="productmanage.php"></a></button></td>
             </tr>
 
         </table>
