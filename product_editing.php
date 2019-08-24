@@ -5,7 +5,7 @@
   </head>
 <body>
     <h1>Add product information</h1>
-    <form action="productmanage.php" method="post">
+    <form action="Add.php" method="post">
         <table width="50%" border="0">
             <tr>
                 <td>ID</td>
@@ -34,11 +34,7 @@
 
         </table>
     </form>
-<?php
-    $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
-        $stmt= $pdo->prepare($sql);
-        $stmt->execute([$id, $productname, $price, $content]);
-?>
+
 
 </body>
 </html>
