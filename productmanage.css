@@ -18,6 +18,7 @@ h1{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 0 0 10px 10px; 
+    margin-left: 375px;
 }
 
 .product-items ul{
@@ -86,8 +87,8 @@ a:hover{
 }
 .main-content{
     float: left;
-    width: 900px;
-    margin-left: 240px;
+    width: 1200px;
+    margin-left: 60px;
 }
 #test{
     border: 1px solid;
