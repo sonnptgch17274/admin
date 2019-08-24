@@ -7,10 +7,10 @@
     <h1>Add product information</h1>
     <form action="Add.php" method="post">
         <table width="50%" border="0">
-            <!-- <tr>
+            <tr>
                 <td>ID</td>
-                <td><input type="text" name ="txtId"></td>
-            </tr> -->
+                <td><input type="num" name ="txtId"></td>
+            </tr>
 
             <tr>
                 <td>Name</td>
