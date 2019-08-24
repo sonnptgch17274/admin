@@ -5,12 +5,12 @@
   </head>
 <body>
     <h1>Add product information</h1>
-    <form action="product_editing.php" method="post">
+    <form action="Add.php" method="post">
         <table width="50%" border="0">
-            <tr>
+            <!-- <tr>
                 <td>ID</td>
                 <td><input type="text" name ="txtId"></td>
-            </tr>
+            </tr> -->
 
             <tr>
                 <td>Name</td>
@@ -35,23 +35,7 @@
         </table>
     </form>
 
-    <?php
-    include "database.php";
-    if(isset($_POST['Register'])){
-        $id = $_POST["txtId"]
-        $name = $_POST["txtName"];
-        $price = $_POST["txtPrice"];
-        $content = $_POST["txtContent"]
 
-        $stsm = $pdo->prepare("INSERT INTO product(id, name, 
-        price, content) VALUES (?,?,?,?)");
-        $stsm->bind_param("ssss", $id, $name, $price, $content);
-        $stsm->execute();
-        $stsm->close();  
-    }
-
-
-    ?>
 
 
 </body>
