@@ -27,7 +27,7 @@
 
     ?>
 
-    echo "Your product has been added successfully";
+    "Your product has been added successfully"; <button><a href="productmanage.php">Back</a></button>
     
 </body>
 </html>
