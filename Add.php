@@ -11,7 +11,7 @@
         $price = $_POST["txtPrice"];
         $content = $_POST["txtContent"]
 
-        $stsm = $conn->prepare("INSERT INTO product(name, 
+        $stsm = $pdo->prepare("INSERT INTO product(name, 
         price, content) VALUES (?,?,?)");
         $stsm->bind_param("sss", $name, $price, $content);
         $stsm->execute();
