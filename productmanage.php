@@ -21,7 +21,7 @@
             </div>
             <ul>
                 <li class="product-item-heading">
-                    <div class="product-prop product-name">ID</div>
+                    <div>ID</div>
                     <div class="product-prop product-name">Name</div>
                     <div class="product-prop product-name">Price</div>
                     <div class="product-prop product-name">Content</div>
