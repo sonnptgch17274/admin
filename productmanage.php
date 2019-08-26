@@ -10,11 +10,12 @@
 <body>
     <div class="trang">
     <div class="dau">
-        <h1>Xin chao</h1>
+        <h1>Welcome, Administrator</h1>
+        <h1>List of products</h1>
     </div>
     <div class="than">
         <div class="main-content">
-        <h1>Danh sách sản phẩm</h1>
+        
         <div class="product-items">
             <div class="buttons">
                 <a href="./product_editing.php">Thêm sản phẩm</a>
