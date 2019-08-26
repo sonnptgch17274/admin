@@ -37,7 +37,13 @@ h1{
     padding-left: 10px;
     /* border-right: 0; */
     float: left;
-    width: 130px;
+    width: 174px;
+}
+.product-name1{
+    padding-left: 10px;
+    /* border-right: 0; */
+    float: left;
+    width: 30px;
 }
 .product-button{
     float: right;
