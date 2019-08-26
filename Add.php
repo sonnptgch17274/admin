@@ -10,7 +10,6 @@
 <?php
     include "database.php";
         // $id = $_POST["txtId"];
-        $id = $_POST["txtId"];
         $productname = $_POST["txtName"];
         $price = $_POST["txtPrice"];
         $content = $_POST["txtContent"];
@@ -21,13 +20,14 @@
         // $stsm->execute();
         // $stsm->close();  
 
-        $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO product (productname, price, content) VALUES (?,?,?)";
         $stmt= $pdo->prepare($sql);
-        $stmt->execute([$id, $productname, $price, $content])
+        $stmt->execute([$productname, $price, $content])
 
     ?>
 
-    "Your product has been added successfully"; <button><a href="productmanage.php">Back</a></button>
+    Your product has been added successfully
+    <button><a href="productmanage.php">Back</a></button>
     
 </body>
 </html>
