@@ -17,8 +17,8 @@ h1{
 .product-items{
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 0 0 10px 10px; 
-    margin-left: 375px;
+    border-radius: 0 0 10px 10px;
+    margin-left: 164px;
 }
 
 .product-items ul{
@@ -37,7 +37,7 @@ h1{
     padding-left: 10px;
     /* border-right: 0; */
     float: left;
-    width: 170px;
+    width: 130px;
 }
 .product-button{
     float: right;
