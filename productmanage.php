@@ -21,7 +21,7 @@
             </div>
             <ul>
                 <li class="product-item-heading">
-                    
+
                     <div class="product-prop product-name">ID</div>
                     <div class="product-prop product-name">Name</div>
                     <div class="product-prop product-name">Price</div>
@@ -35,7 +35,7 @@
                 require_once './database.php';
                     foreach ($resultSet as $row) {
                         ?>
-                        <div class="product-prop product-name"><?= $row['ID'] ?></div>
+                        <div class="product-prop product-name"><?= $row['id'] ?></div>
                         <div class="product-prop product-name"><?= $row['productname'] ?></div>
                         <div class="product-prop product-name"><?= $row['price'] ?></div>
                         <div class="product-prop product-name"><?= $row['content'] ?></div>
