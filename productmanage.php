@@ -18,13 +18,13 @@
         
         <div class="product-items">
             <div class="buttons">
-                <a href="./product_editing.php">Thêm sản phẩm</a>
+                <a href="./product_editing.php">Add new product</a>
             </div>
             <ul>
                 <li class="product-item-heading">
 
                     <div class="product-prop product-name ">ID</div>
-                    <div class="product-prop product-name">Name</div>
+                    <div class="product-prop product-name">Product Name</div>
                     <div class="product-prop product-name">Price</div>
                     <div class="product-prop product-name">Content</div>
                     <div class="product-prop product-button">Delete</div>
