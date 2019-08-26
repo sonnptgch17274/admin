@@ -9,25 +9,18 @@
 <body>
 <?php
     include "database.php";
-        // $id = $_POST["txtId"];
+        $id = $_POST["txtId"];
         $productname = $_POST["txtName"];
         $price = $_POST["txtPrice"];
-        $content = $_POST["txtContent"];
+        $content = $_POST["txtContent"]; 
 
-        // $stsm = $pdo->prepare("INSERT INTO product(name, 
-        // price, content) VALUES (?,?,?)");
-        // $stsm->bind_param("sss", $name, $price, $content);
-        // $stsm->execute();
-        // $stsm->close();  
-
-        $sql = "INSERT INTO product (productname, price, content) VALUES (?,?,?)";
+        $sql = "INSERT INTO product (id, productname, price, content) VALUES (?,?,?,?)";
         $stmt= $pdo->prepare($sql);
-        $stmt->execute([$productname, $price, $content])
+        $stmt->execute([$id, $productname, $price, $content])
 
     ?>
 
-    Your product has been added successfully
-    <button><a href="productmanage.php">Back</a></button>
+    Your product has been added successfully<button><a href="productmanage.php">Back</a></button>
     
 </body>
 </html>
